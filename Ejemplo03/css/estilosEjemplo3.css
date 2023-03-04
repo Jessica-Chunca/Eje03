@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+}
+
+.encabezado {
+    /* Regla de estilo que se aplicara a los elementos que tengan la clase encabezado */
+    margin: 0 auto;
+    /* Margen Exterior */
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1));
+    padding: 10px;
+    /* Margen Interior */
+    text-align: right;
+    /* Alineacion del texto */
+    border: 3px solid white;
+    /* Propiedades del borde : grosor, tipo, color */
+    
+}
+
+.menu h1 {
+    /* Regla de estilo que se aplicara a los elementos que estan dentro del elmento que tiene la clase menu */
+    color: rgb(221, 44, 59);
+    text-align: center;
+}
+
+.enlaces {
+    /* Flexbox */
+    color: white;
+    display: flex;
+    gap: 20px;
+}
+
+
+/* .enlaces li {
+    list-style: none;
+}*/
+
+.menuItem {
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.menuItem a div {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: antiquewhite;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px black;
+}
+
+
+/* Psudoclases : hover> cuando el cursor esta encima */
+
+.menuItem a div:hover {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(46, 216, 193);
+    border-radius: 20px;
+    box-shadow: 2px 2px 6px rgb(12, 12, 12);
+}
+
+.contenido {
+    margin-top: 20px;
+    /* borde de el elemento: grosor tipo color */
+    border: 1px solid rgb(7, 7, 7);
+    /* curvatura del cada esquina : ESI ESD EID EII | uno para todos */
+    /* border-radius: 50px 30px 15px 5px; */
+    border-radius: 25px;
+    /* Color de fondo*/
+    /* background-color: antiquewhite;*/
+    /* Ancho */
+    width: 70%;
+    /* Alto */
+    height: 600px;
+    /* Margen exterior  */
+    margin-left: 15%;
+    /* margin-top: 5px;
+    margin-bottom: 15px;
+    margin-right: 5%; */
+    /* Margen interior */
+    color: rgb(5, 5, 5);
+    /* Fondo con degradado de colores */
+    /*background: linear-gradient(-15deg, #FFFFFF, #581edf, #ade90a, #ABC000);*/
+    /* background: linear-gradient(to left, #000000, #FFFFFF, #999999); */
+    /*background: linear-gradient(to top, transparent, #666666, #ade90a, #ABC000);*/
+    box-shadow: 5px 5px 15px black;
+    padding: 0.9%;
+    background-color: rgb(127, 205, 224);
+    text-shadow: 0 0 8px rgb(0 0 0 / 80%);
+}
+.contenido p span{
+    color: #7f54e4;
+    font-weight: bold;
+}
+
+.inombre {
+    border: 0.5px solid rgb(67, 73, 78);
+    background-color: cornsilk;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 5px;
+}
+
+.inombre:hover {
+    border: 2px solid rgb(5, 17, 126);
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/* contacto */
+.contacto{
+    background-image: url(img/contacto.png);
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 0;
+}
+.contacto .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.contacto h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.contacto .col{
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+.contacto .col input, .contacto .col textarea{
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #3e3780;
+    color: #fff;
+    font-size: 18px;
+}.contacto button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+.contacto button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #8b054f;
+    z-index: -1;
+    transition: 1s;
+}
+.contacto button:hover .overlay{
+    width: 100%;
+}
+.contenidoFormacion{
+    margin-top: 50px;
+    border: 1px solid rgb(7, 7, 7);
+    border-radius: 25px;
+    width: 70%;
+    height: 400px;
+    margin-left: 15%;
+    color: rgb(5, 5, 5);
+     background: linear-gradient(to left, #000000, #FFFFFF, #0a0a0a); 
+    box-shadow: 5px 5px 15px black;
+    padding: 0.5%;
+}
+.himagen-1{                 
+    background-image: url(img/p1.png);
+    padding-bottom: 20px;
+    width: 60%;
+    height: 400px;
+    border-radius: 25px;
+    margin-left: 20%;
+    margin-top: 30px;
+}
+.himagen-1 .fooder{
+    color: #fff;
+    text-align: center;   
+}
+.card{
+   position: relative;
+    width: 300px;
+    height: 380px;
+    margin: 50px; 
+    margin-left: 40%;
+    margin-top: 60px; 
+}
+
+.face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: .5s linear;
+}
+
+.front{
+    padding-top: 20px;
+    transform: perspective(600px) rotate(0deg);
+    box-shadow: 0 5px 10px black;
+    text-align: center;
+    background: linear-gradient(to top, #1a3cad, #0b8fe7, #24dcf5);
+}
+
+.back{
+    transform: perspective(600px) rotateY(180deg);
+    background: linear-gradient(to top, #1a3cad, #0b8fe7, #24dcf5);
+    padding-top: 20px;
+    color: black;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(75, 84, 211, 0.774);
+}
+
+.card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}
+.himagen-2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 250px;
+    height: 190px;
+    border-radius: 25px;
+  
+}
